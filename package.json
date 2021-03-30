@@ -5,7 +5,7 @@
     "homepage": ".",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon node out/index.js", 
+        "start": "node out/index.js", 
         "dev": "nodemon -e ts,tsx --exec ts-node ts/index.ts", 
         "debug": "SET NODE_ENV=development&&node --nolazy --inspect-brk=5857 out/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
