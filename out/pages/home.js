@@ -9,19 +9,33 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const db_1 = require("../db");
 const ejs = require("ejs");
 const tools_1 = require("../tools");
 function home(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            //let slideshowlist = await Dbs.content.homePostList();
+            //获取产品
+            let product = yield db_1.Dbs.content.queryImage("product", 1, 10);
+            //获取轮播图
+            let swiper = yield db_1.Dbs.content.querySwiper();
+            //车间
+            let workshop = yield db_1.Dbs.content.queryImage("workshop", 1, 10);
+            let abouts = yield db_1.Dbs.content.queryAbout();
+            let about = abouts.length > 0 ? abouts[0] : null;
             let header = ejs.fileLoader(tools_1.viewPath + 'header/home-header' + tools_1.ejsSuffix).toString();
             let main = ejs.fileLoader(tools_1.viewPath + 'home' + tools_1.ejsSuffix).toString();
             let footer = ejs.fileLoader(tools_1.viewPath + 'footer/home-footer' + tools_1.ejsSuffix).toString();
             let template = header
                 + main
                 + footer;
-            let data = tools_1.buildData(req, {});
+            let data = tools_1.buildData(req, {
+                swiper: swiper,
+                about: about,
+                product: product,
+                workshop: workshop
+            });
+            console.log(about);
             let html = ejs.render(template, data);
             res.end(html);
         }

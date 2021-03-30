@@ -5,16 +5,32 @@ import { ejsError, viewPath, ejsSuffix, buildData } from "../tools";
 
 export async function home(req: Request, res: Response) {
     try {
-        //let slideshowlist = await Dbs.content.homePostList();
+
+        //获取产品
+        let product = await Dbs.content.queryImage("product", 1, 10);
+        //获取轮播图
+        let swiper = await Dbs.content.querySwiper();
+        //车间
+        let workshop = await Dbs.content.queryImage("workshop", 1, 10);
+
+        let abouts = await Dbs.content.queryAbout();
+        let about = abouts.length > 0 ? abouts[0] : null
+
         let header = ejs.fileLoader(viewPath + 'header/home-header' + ejsSuffix).toString();
         let main = ejs.fileLoader(viewPath + 'home' + ejsSuffix).toString();
         let footer = ejs.fileLoader(viewPath + 'footer/home-footer' + ejsSuffix).toString();
         let template = header
             + main
             + footer;
+
         let data = buildData(req, {
-            
+            swiper: swiper,
+            about: about,
+            product: product,
+            workshop: workshop
         });
+
+        console.log(about);
         let html = ejs.render(template, data);
         res.end(html);
     } catch (e) {

@@ -7,11 +7,25 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "nodemon",
+            "runtimeExecutable": "nodemon",
+            "program": "${workspaceFolder}/ts/index.ts",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
             "name": "启动程序",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/out/index.js",
+            "program": "${workspaceFolder}/ts/index.ts",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
