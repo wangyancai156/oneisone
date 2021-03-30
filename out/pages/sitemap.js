@@ -11,12 +11,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const ejs = require("ejs");
 const tools_1 = require("../tools");
-function about(req, res) {
+function sitemap(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             //let slideshowlist = await Dbs.content.homePostList();
             let header = ejs.fileLoader(tools_1.viewPath + 'header/home-header' + tools_1.ejsSuffix).toString();
-            let main = ejs.fileLoader(tools_1.viewPath + 'about' + tools_1.ejsSuffix).toString();
+            let main = ejs.fileLoader(tools_1.viewPath + 'sitemap' + tools_1.ejsSuffix).toString();
             let footer = ejs.fileLoader(tools_1.viewPath + 'footer/home-footer' + tools_1.ejsSuffix).toString();
             let template = header
                 + main
@@ -30,6 +30,6 @@ function about(req, res) {
         }
     });
 }
-exports.about = about;
+exports.sitemap = sitemap;
 ;
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=sitemap.js.map

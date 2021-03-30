@@ -2,12 +2,12 @@ import { Request, Response } from "express";
 import { Dbs } from "../db";
 import * as ejs from 'ejs';
 import { ejsError, viewPath, ejsSuffix, buildData } from "../tools";
- 
-export async function about(req: Request, res: Response) {
+  
+export async function sitemap(req: Request, res: Response) {
     try {
         //let slideshowlist = await Dbs.content.homePostList();
         let header = ejs.fileLoader(viewPath + 'header/home-header' + ejsSuffix).toString();
-        let main = ejs.fileLoader(viewPath + 'about' + ejsSuffix).toString();
+        let main = ejs.fileLoader(viewPath + 'sitemap' + ejsSuffix).toString();
         let footer = ejs.fileLoader(viewPath + 'footer/home-footer' + ejsSuffix).toString();
 
         let template = header

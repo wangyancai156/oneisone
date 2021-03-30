@@ -6,6 +6,7 @@ import { honor } from './honor';
 import { news } from './news';
 import { contact } from './contact';
 import { strength } from './strength';
+import { sitemap } from './sitemap';
 
 export const homeRouter = Router({ mergeParams: true });
 homeRouter.get('/', home); 
@@ -16,6 +17,7 @@ homeRouter.get('/honor', honor);
 homeRouter.get('/news', news); 
 homeRouter.get('/contact', contact); 
 homeRouter.get('/strength', strength); 
+homeRouter.get('/sitemap', sitemap); 
 
 
 
