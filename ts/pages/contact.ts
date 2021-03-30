@@ -5,6 +5,8 @@ import { ejsError, viewPath, ejsSuffix, buildData } from "../tools";
   
 export async function contact(req: Request, res: Response) {
     try {
+
+        
         //let slideshowlist = await Dbs.content.homePostList();
         let header = ejs.fileLoader(viewPath + 'header/home-header' + ejsSuffix).toString();
         let main = ejs.fileLoader(viewPath + 'contact' + ejsSuffix).toString();

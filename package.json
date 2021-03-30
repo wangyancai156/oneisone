@@ -5,7 +5,8 @@
     "homepage": ".",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon node out/index.js",
+        // "start": "nodemon node out/index.js", //此启动方法 是用来监控 js是否变动 如果变动就自动编译
+        "start": "nodemon -e ts,tsx --exec ts-node ts/index.ts", //此启动方法 是用来监控 ts 是否变动 如果变动就自动编译
         "debug": "SET NODE_ENV=development&&node --nolazy --inspect-brk=5857 out/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
