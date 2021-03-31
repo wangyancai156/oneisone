@@ -65,17 +65,17 @@
 /* 底部样式 */
 .footer {
     padding         : 100px 0 30px;
-    background-color: #232323;
-    color           : #777;
+    background-color:green;
+    color           :white;
     font-size       : 12px;
 }
 
 .footer a {
-    color: #777;
+    color: white;
 }
 
 .footer a:hover {
-    color: #fff;
+    color: black;
 }
 
 .footer p {

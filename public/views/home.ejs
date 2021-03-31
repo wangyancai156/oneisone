@@ -49,16 +49,16 @@
             <%} } %>
 </div>
 
-<div class="section liwenwen">
+<div class="section">
     <% let {id, image, content, content1, content2 }=about; %>
-        <div class="container" data-aos="fade-up" aos-offset="200" aos-easing="ease-in-sine" aos-duration="600">
+        <div class="container">
             <div class="row">
-                <div class="section-title" >
+                <div class="section-title" data-aos="fade-up">
                     <h3>企业简介</h3>
                     <h3 style="color: darkgray;">About us</h3>
                     <img class="mod-image" src="<%=$root%>img/biaoti.png" />
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8" data-aos="fade-up">
                     <div class="paragraph">
                         <p>
                             <%=content%>
@@ -68,7 +68,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-4  mypicture" style="padding: 2px;">
+                <div class="col-sm-4  mypicture" style="padding: 2px;" data-aos="fade-down">
                     <img src="<%=$root%>img/<%=image%>"></img>
                 </div>
             </div>
@@ -77,15 +77,15 @@
 
 <div class="section" style="background-color:whitesmoke; background-image: url(<%=$root%>img/beijing2.jpg);">
     <div class="container">
-        <div class="section-title">
-            <h3 style="color: white;">产品展示</h3>
+        <div class="section-title" data-aos="fade-up">
+            <h3 style="color: white; font-weight: 900;">产品展示</h3>
             <h3 style="color: darkgray;">Product center</h3>
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
         <div class="lunbo  clearfix" id="box">
 
             <% for(var i=0;i<product.length;i++){ let {id, image, title }=product[i]; %>
-                <div style="text-align: center;" data-aos="fade-up">
+                <div style="text-align: center;" data-aos="flip-left">
                     <div class="mypicture" style="margin: 1rem;">
                         <img src="<%=$root%>img/<%=image%>" alt="<%=title%>">
                     </div>
@@ -98,22 +98,22 @@
     </div>
 </div>
 
-<div class="section  " style="background-color:whitesmoke;" >
+<div class="section  " style="background-color:whitesmoke;">
     <div class="container">
-        <div class="section-title aos-init aos-animate" aos="fade-zoom-in" aos-offset="200" aos-easing="ease-in-sine" aos-duration="600">
-            <h3 style="color:black;">生产车间</h3>
+        <div class="section-title aos-init aos-animate" data-aos="fade-up">
+            <h3 style="color:black; font-weight: 900;">生产车间</h3>
             <h3 style="color: darkgray;">Production center</h3>
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
         <div class="lunbo clearfix" id="box">
 
             <% for(var i=0;i<workshop.length;i++){ let {id, image, title }=workshop[i]; %>
-                <div style="text-align: center;  ">
+                <div style="text-align: center;" data-aos="flip-left">
                     <div class="mypicture" style="margin: 1rem; ">
                         <img src="<%=$root%>img/<%=image%>" alt="<%=title%>">
                     </div>
                     <div class="list_eye">
-                        <span style="color:white;">
+                        <span style="color:black;">
                             <%=title%>
                         </span>
                     </div>
