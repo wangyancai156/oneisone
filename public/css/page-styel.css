@@ -18,7 +18,7 @@ a:focus {
 
 /* 模块样式 */
 .section {
-    padding         : 50px 0;
+    padding         : 30px 0;
     background-color: white;
 }
 
@@ -60,13 +60,14 @@ h3 {
 .mypicture {
     padding   : 0;
     text-align: center;
-    position  : relative;
+    /* position  : relative; */
     /* 添加阴影 */
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 5px #000;
     /* 边框 */
     border    : solid 0px #ffffff;
     /* 配合悬停慢慢变大 不超出边框*/
     overflow  : hidden;
+    background-color:white;
 }
 
 .mypicture img {
@@ -244,6 +245,6 @@ h3 {
         min-height: 434px;
         min-width : 350px;
     }
-    
+
 
 }

@@ -86,34 +86,11 @@
 
             <% for(var i=0;i<product.length;i++){ let {id, image, title }=product[i]; %>
                 <div style="text-align: center;" data-aos="flip-left">
-                    <div class="mypicture" style="margin: 1rem;">
+                    <div class="mypicture" style="margin: 0 1rem 0 1rem ;">
                         <img src="<%=$root%>img/<%=image%>" alt="<%=title%>">
                     </div>
-                    <div class="list_eye"> <span style="color:white;">
-                            <%=title%>
-                        </span> </div>
-                </div>
-                <%} %>
-        </div>
-    </div>
-</div>
-
-<div class="section  " style="background-color:whitesmoke;">
-    <div class="container">
-        <div class="section-title aos-init aos-animate" data-aos="fade-up">
-            <h3 style="color:black; font-weight: 900;">生产车间</h3>
-            <h3 style="color: darkgray;">Production center</h3>
-            <img class="mod-image" src="<%=$root%>img/biaoti.png" />
-        </div>
-        <div class="lunbo clearfix" id="box">
-
-            <% for(var i=0;i<workshop.length;i++){ let {id, image, title }=workshop[i]; %>
-                <div style="text-align: center;" data-aos="flip-left">
-                    <div class="mypicture" style="margin: 1rem; ">
-                        <img src="<%=$root%>img/<%=image%>" alt="<%=title%>">
-                    </div>
-                    <div class="list_eye">
-                        <span style="color:black;">
+                    <div style="background-color:azure; margin: 0 1rem;  padding: 1rem 0;">
+                        <span style="color:black;  font-size:1.5rem; ">
                             <%=title%>
                         </span>
                     </div>
@@ -122,6 +99,55 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="section">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h3 style="color: black; font-weight: 900;">合作案例</h3>
+            <h3 style="color: darkgray;">Product center</h3>
+            <img class="mod-image" src="<%=$root%>img/biaoti.png" />
+        </div>
+        <div class="row clearfix" id="box">
+            <%let {id:id0, image:image0, title:title0 }=workshop[0]; %>
+                <div class="col col-md-6 col-sm-6 col-sm-12" data-aos="flip-left">
+                    <div class="mypicture">
+                        <img src="<%=$root%>img/<%=image0%>" style="height: 38rem; " alt="案例">
+                    </div>
+                </div>
+                <% for(var i=1;i<workshop.length;i++){ let {id, image, title }=workshop[i]; %>
+                    <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-right">
+                        <div class="mypicture" style="margin: 0.5rem;">
+                            <img src="<%=$root%>img/<%=image%>" style="height: 18rem; ">
+                        </div>
+                    </div>
+                    <%} %>
+        </div>
+    </div>
+</div>
+
+<div class="section" style="background-color:whitesmoke">
+    <div class="container text-center">
+        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
+            <span class="fa fa-university" style="font-size: 10rem;"></span>
+            <div style="font-weight: 900;margin: 1rem;">24年生产经验</div>
+        </div>
+        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
+            <span class="fa fa-cog" style="font-size: 10rem;"></span>
+            <div style="font-weight: 900; margin: 1rem;">30多道工序</div>
+        </div>
+        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
+            <span class="fa fa-headphones" style="font-size: 10rem;"></span>
+            <div style="font-weight: 900;margin: 1rem;">24小时热线服务</div>
+        </div>
+        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
+            <span class="fa fa-diamond" style="font-size: 10rem;"></span>
+            <div style="font-weight: 900;margin: 1rem;">保障产品质量</div>
+        </div>
+    </div>
+</div>
+
 
 <div class="city">
     <div class="container">
