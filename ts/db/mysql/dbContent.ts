@@ -30,7 +30,7 @@ export class DbContent extends Db {
 
     async querySwiper(): Promise<any> {
 
-        var querySql: string = `SELECT * FROM ${this.db}.swiper `;
+        var querySql: string = `SELECT * FROM ${this.db}.swiper order by sort`;
 
         const ret = await this.tableFromSql(querySql);
         return ret;
