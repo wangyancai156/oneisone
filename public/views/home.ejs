@@ -1,3 +1,4 @@
+<!-- lunbo -->
 <div class="owl-carousel owl-banner owl-theme" style="display: block; opacity: 1;">
     <% for(var i=0;i<swiper.length;i++){ let {id, image, title, caption, caption2 }=swiper[i]; if(i==0){ %>
         <div class="owl-wrapper-outer">
@@ -49,6 +50,8 @@
             <%} } %>
 </div>
 
+
+<!-- about -->
 <div class="section">
     <% let {id, image, content, content1, content2 }=about; %>
         <div class="container">
@@ -75,10 +78,42 @@
         </div>
 </div>
 
+
+
+<!-- latest news -->
+<div class="js" data-aos="flip-left">
+    <h3>技术创新·引领环保</h3>
+    <h3>INNOVATION &amp; ENVIRONMENTAL
+        PROTECTON</h3>
+    <div>
+        <ul>
+            <li>
+                <img src="<%=$root%>img/jxx1.jpg"></img>
+                <div>先进设备</div>
+            </li>
+            <li>
+                <img src="<%=$root%>img/jxx2.jpg"></img>
+                <div>选材优良</div>
+            </li>
+            <li>
+                <img src="<%=$root%>img/jxx3.jpg"></img>
+                <div>保障质量</div>
+            </li>
+            <li>
+                <img src="<%=$root%>img/jxx4.jpg"></img>
+                <div>24小时售后</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- product -->
 <div class="section" style="background-color:whitesmoke; background-image: url(<%=$root%>img/beijing2.jpg);">
     <div class="container">
+
         <div class="section-title" data-aos="fade-up">
-            <h3 style="color: white; font-weight: 900;">产品展示</h3>
+            <h3 style="color: white;">产品展示</h3>
             <h3 style="color: darkgray;">Product center</h3>
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
@@ -90,7 +125,7 @@
                         <img src="<%=$root%>img/<%=image%>" alt="<%=title%>">
                     </div>
                     <div style="background-color:azure; margin: 0 1rem;  padding: 1rem 0;">
-                        <span style="color:black;  font-size:1.5rem; ">
+                        <span style="color:black;  font-size:1.2rem; ">
                             <%=title%>
                         </span>
                     </div>
@@ -101,74 +136,33 @@
 </div>
 
 
-<div class="section" style="background-color:whitesmoke">
-    <div class="container text-center">
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-university" style="font-size: 10rem; color:darkgrey;"></span>
-            <div style="font-weight: 900;margin: 1rem;">23年生产经验</div>
-        </div>
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-cog" style="font-size: 10rem;color:darkgrey;"></span>
-            <div style="font-weight: 900; margin: 1rem;">30多道工序</div>
-        </div>
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-headphones" style="font-size: 10rem;color:darkgrey;"></span>
-            <div style="font-weight: 900;margin: 1rem;">24小时热线服务</div>
-        </div>
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-diamond" style="font-size: 10rem;color:darkgrey;"></span>
-            <div style="font-weight: 900;margin: 1rem;">保障产品质量</div>
-        </div>
-    </div>
-</div>
-
-
+<!-- hezuo -->
 <div class="section">
     <div class="container">
         <div class="section-title" data-aos="fade-up">
-            <h3 style="color: black; font-weight: 900;">合作案例</h3>
-            <h3 style="color: darkgray;">Product center</h3>
+            <h3>合作案例</h3>
+            <h3 style="color: darkgray;">ENGINEERING CASE</h3>
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
-        <div class="row clearfix" id="box">
-            <%let {id:id0, image:image0, title:title0 }=workshop[0]; %>
-                <div class="col col-md-6 col-sm-6 col-sm-12" data-aos="flip-left">
-                    <div class="mypicture">
-                        <img src="<%=$root%>img/<%=image0%>" style="height: 38rem; " alt="案例">
-                    </div>
-                </div>
-                <% for(var i=1;i<workshop.length;i++){ let {id, image, title }=workshop[i]; %>
-                    <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-right">
-                        <div class="mypicture" style="margin: 0.5rem;">
-                            <img src="<%=$root%>img/<%=image%>" style="height: 18rem; ">
-                        </div>
-                    </div>
-                    <%} %>
+        <div style="margin-top:20px;margin-bottom:13%;">
+            <div style="width:47%;float:left; margin: 0.2rem;" data-aos="fade-right">
+                <img style="width:100%;height:100%;" src="<%=$root%>img/anli1.jpg">
+            </div>
+            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-up">
+                <img style="width:100%;height:100%;" src="<%=$root%>img/anli2.jpg">
+            </div>
+            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-left">
+                <img style="width:100%;height:100%;" src="<%=$root%>img/anli3.jpg">
+            </div>
+            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-right">
+                <img style="width:100%;height:100%;" src="<%=$root%>img/anli4.jpg">
+            </div>
+            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-down">
+                <img style="width:100%;height:100%;" src="<%=$root%>img/anli5.jpg">
+            </div>
         </div>
     </div>
 </div>
-<div class="section" style="background-color:whitesmoke">
-    <div class="container text-center">
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-university" style="font-size: 10rem; color:darkgrey;"></span>
-            <div style="font-weight: 900;margin: 1rem;">先进的生产设备</div>
-        </div>
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-cog" style="font-size: 10rem;color:darkgrey;"></span>
-            <div style="font-weight: 900; margin: 1rem;">选用优良桐为原料</div>
-        </div>
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-headphones" style="font-size: 10rem;color:darkgrey;"></span>
-            <div style="font-weight: 900;margin: 1rem;">年生产量达150万</div>
-        </div>
-        <div class="col col-md-3 col-sm-6 col-sm-12" data-aos="flip-left">
-            <span class="fa fa-diamond" style="font-size: 10rem;color:darkgrey;"></span>
-            <div style="font-weight: 900;margin: 1rem;">一是一木业产品</div>
-        </div>
-    </div>
-</div>
-
-
 
 <div class="city">
     <div class="container">
