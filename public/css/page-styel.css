@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family     : "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    font-family     : 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
     min-width       : 320px;
     background-color: #f8f8f8;
 }
@@ -23,17 +23,22 @@ a:focus {
 }
 
 .section-title {
+    width: 100%;
+
     margin-top: 2rem;
-    width     : 100%;
     text-align: center;
+
 }
 
 .section-title h3 {
+    font-size: 2rem;
+
+    width: 100%;
+
     margin    : 0;
-    width     : 100%;
-    text-align: center;
     padding   : 0 0 10px 0;
-    font-size : 2rem;
+    text-align: center;
+
 }
 
 h3 {
@@ -43,50 +48,59 @@ h3 {
 
 /* 段落样式 */
 .paragraph p {
-    text-indent   : 2em;
     /* font       : 100%/1.6 Verdana, Geneva, Arial, Helvetica, sans-serif; */
-    font-family   : 微软雅黑, 'Microsoft YaHei';
+    font-family: 微软雅黑, 'Microsoft YaHei';
+    color: #8a8a8a;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-size     : 17px;
-    white-space   : normal;
+    font-size  : 14px;
+    white-space: normal;
+    text-indent: 2em;
 
 }
 
 /* .paragraph p:first-letter {
-    display          : inline;
-    float            : left;
+    display : inline;
+    float   : left;
      首字下沉   
-     font          : 2.1em Georgia, arial;
+     font : 2.1em Georgia, arial;
     text-transform   : uppercase;
-    margin           : 0 0.12em 0 0
+    margin  : 0 0.12em 0 0
 } */
 
 /* 普通图片样式  */
 .mypicture {
-    padding         : 0;
-    text-align      : center;
+    /* 配合悬停慢慢变大 不超出边框*/
+    overflow  : hidden;
+    padding   : 0;
+    text-align: center;
+
+    /* 边框 */
+
+    border          : solid 0 #fff;
+    background-color: white;
+
     /* position     : relative; */
     /* 添加阴影 */
-    box-shadow      : 0px 0px 5px #000;
-    /* 边框 */
-    border          : solid 0px #ffffff;
-    /* 配合悬停慢慢变大 不超出边框*/
-    overflow        : hidden;
-    background-color: white;
+    box-shadow: 0 0 5px #000;
+
 }
 
 .mypicture img {
-    width     : 100%;
-    cursor    : pointer;
+    width : 100%;
+    cursor: pointer;
+
     /* 配合悬停慢慢变大 */
-    transition: all 0.6s;
+    transition: all .6s;
+
 }
 
 /* 鼠标悬停图片放大 */
 .mypicture img:hover {
-    background: url();
     display   : block;
-    transform : scale(1.1)
+    transform : scale(1.1);
+    background: url();
+
+    ;
 }
 
 /* 标题修饰图片样式 */
@@ -95,17 +109,18 @@ h3 {
     max-width: 400px;
 }
 
-
 /* 友情链接 */
 .city {
     overflow: hidden;
 }
 
 .city h3 {
-    float      : left;
     font-size  : 15px;
     line-height: 78px;
-    margin     : 0;
+
+    float : left;
+    margin: 0;
+
 }
 
 .city .flink_list {
@@ -113,41 +128,44 @@ h3 {
 }
 
 .city li {
+    float: left;
+
     list-style: none;
-    float     : left;
+
 }
 
 .city li a {
+    font-size  : 14px;
+    line-height: 78px;
+
     margin-right: 15px;
-    font-size   : 14px;
     color       : #666;
-    line-height : 78px;
+
 }
 
 .city li a:hover {
     color: #425cbb;
 }
 
-
 /* 标题 */
 .banner {
+    position            : relative;
     padding             : 180px 0;
+    color               : #fff;
     background          : no-repeat center center;
     -moz-background-size: cover;
     background-size     : cover;
-    color               : #fff;
-    position            : relative;
 }
 
 .banner:before {
     position        : absolute;
-    left            : 0;
     top             : 0;
+    left            : 0;
     width           : 100%;
     height          : 100%;
-    background-color: #000;
-    opacity         : 0.5;
     content         : '';
+    opacity         : .5;
+    background-color: #000;
     filter          : alpha(opacity=50);
 }
 
@@ -162,51 +180,57 @@ h3 {
 
 .banner .lead {
     margin : 0;
-    opacity: 0.9;
+    opacity: .9;
     filter : alpha(opacity=90);
 }
 
 .banner .btn {
-    border-color         : rgba(255, 255, 255, 0.1);
-    font-size            : 12px;
-    color                : #fff;
-    padding              : 10px 30px;
+    font-size: 12px;
+    margin   : 20px 10px 0;
+
+    padding     : 10px 30px;
+    color       : #fff;
+    border-width: 2px;
+
+    border-color         : rgba(255, 255, 255, .1);
     -webkit-border-radius: 20px;
     -moz-border-radius   : 20px;
     border-radius        : 20px;
-    border-width         : 2px;
-    margin               : 20px 10px 0;
+
 }
 
 .banner .btn:hover {
     border-color: #fff;
 }
 
-
 /* 联系我们 */
 /* 联系我们 */
 .baidumap {
+    min-width: 800px;
+
     min-height: 434px;
-    min-width : 800px;
+
 }
 
 .strip {
+    display: block;
+
     text-align: center;
-    display   : block;
+
 }
 
 .strip .item span {
+    font-size: 10rem;
+
     text-align: center;
-    font-size : 10rem;
     color     : darkgrey;
+
 }
 
 .strip .item div {
     font-weight: 900;
     margin     : 1rem;
 }
-
-
 
 /*js*/
 
@@ -216,11 +240,14 @@ h3 {
 }
 
 .js h3 {
-    width     : 100%;
-    text-align: center;
+    font-size: 1.2rem;
+
+    width : 100%;
+    margin: 0;
+
     padding   : 0 0 5px 0;
-    font-size : 1.2rem;
-    margin    : 0;
+    text-align: center;
+
 }
 
 .js ul li {
@@ -234,8 +261,11 @@ h3 {
     /* height: 100%; */
     width : 25px;
     margin: 0 auto;
-}
+} 
 
+.uu ul li b{color: #2c276e;font-size: 50px;font-weight: 100;font-family: fantasy;position: relative;}
+.uu ul li b:before{content:'+';position:absolute;right: -20px;top: -10px;font-size: 50px;font-weight: bold;}
+.uu ul li dt{text-align: center;font-size: 12px;margin-top: .5rem;}
 
 @media (max-width: 767px) {
 
@@ -273,7 +303,7 @@ h3 {
         display: inline;
         float  : left;
         首字下沉  
-        font          : 1em Georgia, arial;
+        font : 1em Georgia, arial;
         text-transform: uppercase;
         margin: 0 0.12em 0 0
     } */
@@ -295,8 +325,10 @@ h3 {
 
     /* 联系我们 */
     .baidumap {
+        min-width: 350px;
+
         min-height: 434px;
-        min-width : 350px;
+
     }
 
 

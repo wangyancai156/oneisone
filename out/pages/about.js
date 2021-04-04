@@ -9,11 +9,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.about = void 0;
+const db_1 = require("../db");
 const ejs = require("ejs");
 const tools_1 = require("../tools");
 function about(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            let abouts = yield db_1.Dbs.content.queryAbout();
+            let about = abouts.length > 0 ? abouts[0] : null;
             //let slideshowlist = await Dbs.content.homePostList();
             let header = ejs.fileLoader(tools_1.viewPath + 'header/home-header' + tools_1.ejsSuffix).toString();
             let main = ejs.fileLoader(tools_1.viewPath + 'about' + tools_1.ejsSuffix).toString();
@@ -21,7 +25,9 @@ function about(req, res) {
             let template = header
                 + main
                 + footer;
-            let data = tools_1.buildData(req, {});
+            let data = tools_1.buildData(req, {
+                about: about
+            });
             let html = ejs.render(template, data);
             res.end(html);
         }

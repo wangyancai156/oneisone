@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Db = exports.Dbs = void 0;
 const db_1 = require("./db");
 const dbContent_1 = require("./dbContent");
 class Dbs {
@@ -14,5 +15,5 @@ class Dbs {
 exports.Dbs = Dbs;
 Dbs.unit = 24;
 var db_2 = require("./db");
-exports.Db = db_2.Db;
+Object.defineProperty(exports, "Db", { enumerable: true, get: function () { return db_2.Db; } });
 //# sourceMappingURL=dbs.js.map

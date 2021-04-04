@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DbContent = void 0;
 const db_1 = require("./db");
 class DbContent extends db_1.Db {
     constructor() {
@@ -32,7 +33,7 @@ class DbContent extends db_1.Db {
     }
     querySwiper() {
         return __awaiter(this, void 0, void 0, function* () {
-            var querySql = `SELECT * FROM ${this.db}.swiper `;
+            var querySql = `SELECT * FROM ${this.db}.swiper order by sort`;
             const ret = yield this.tableFromSql(querySql);
             return ret;
         });

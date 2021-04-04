@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.icon = void 0;
 exports.icon = [
     {
         caption: '有机化学',
@@ -289,6 +290,16 @@ exports.icon = [
                         classifyy: [
                             {
                                 subdirectory: '多肽合成',
+                                // subdirectory:[
+                                //     {
+                                //         subdirectoryTitle:'C-H活化',
+                                //         submenu:[
+                                //             {
+                                //                 submenuTitle:''
+                                //             }
+                                //         ]
+                                //     }
+                                // ]
                             },
                             {
                                 subdirectory: '核苷酸合成'
