@@ -1,13 +1,16 @@
 @import './awesome/css/font-awesome.min.css';
-@import 'swiper.min.css';
-@import 'bootstrap.css';
-@import 'owl.carousel.css';
+@import './bootstrap/css/bootstrap.min.css';
+@import './aos/aos.css';
+@import './owl/owl.carousel.css';
+
 @import 'page-styel.css';
 @import 'menu-styel.css';
-@import 'owl-banner-styel.css';
+
 @import 'footer-style.css';
-@import 'aos.css';
 @import 'animate.min.css';
+
+@import 'page-banner.css';
 @import 'page-about.css';
 @import 'page-product.css';
 @import 'page-engineetring.css';
+ 

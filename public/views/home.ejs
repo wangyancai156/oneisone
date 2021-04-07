@@ -109,10 +109,11 @@
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
         <div class="tab flex" data-aos="fade-up">
-            <div>阻燃板</div>
-            <div>生态板</div>
-            <div>细木工</div>
+            <div style="background-color: rgb(42, 43, 42); width: 33%;text-align: center;" id="zuran">阻燃板</div>
+            <div style="background-color: turquoise; width: 33%;text-align: center;" id="shengtai">生态板</div>
+            <div style="background-color: turquoise; width: 33%;text-align: center;" id="ximugong">细木工</div>
         </div>
+
         <div class="content" style="text-align: center;">
             <% for (let i=0; i< product.length; i++) { let {name, image }=product[i]; if( i>7) break;
                 %>
@@ -121,7 +122,9 @@
                 </div>
                 <% } %>
         </div>
+
     </div>
+
     <div class="product-wrap" data-aos="fade-up" style="background-color: #f4f4f4; text-align: center;">
         <h3>技术创新·引领环保</h3>
         <h3>INNOVATION &amp; ENVIRONMENTAL PROTECTON

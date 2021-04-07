@@ -1,5 +1,5 @@
 /*!
- * Created by rean on 2017/10/8
+ * 
  */
 
 $(function () {
@@ -48,14 +48,6 @@ $(function () {
         }
     });
     $('.cndns-right .cndns-right-btn:first').css({border: "none"});
-
-    // $('.owl-case').owlCarousel({
-    //     itemsCustom : [
-    //         [0, 1],
-    //         [450, 2],
-    //         [991, 3]
-    //     ]
-    // });
     
 });
 

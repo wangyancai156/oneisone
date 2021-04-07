@@ -110,7 +110,7 @@
 
 @media (max-width: 767px) {
     .product .tab{
-      width: 100%;  margin-right: auto; margin-left: auto; font-size: 15px; margin-top: 1.5rem;
+      width: 60%;  margin-right: auto; margin-left: auto; font-size: 15px; margin-top: 1.5rem; font-weight: 900;
    }
 
    .product-wrap .item img{
