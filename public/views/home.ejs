@@ -10,10 +10,11 @@
                         </div>
                         <div class="container text-center">
                             <div class="wrap">
-                                <h1>
+                                <h1 style="color: rgb(231, 227, 227);">
                                     <%=title%>
                                 </h1>
-                                <p class="lead" style="margin-top: 5%; margin-left: 50%; ">
+                                <p class="lead"
+                                    style="margin-top: 5%; margin-left: 50%; color: whitesmoke; font-weight: 900; ">
                                     <%=caption%>
                                 </p>
                             </div>
@@ -31,16 +32,17 @@
                             </div>
                             <div class="container text-center">
                                 <div class="wrap">
-                                    <h1>
+                                    <h1 style="color: rgb(231, 227, 227);">
                                         <%=title%>
                                     </h1>
-                                    <p class="lead" style="text-align: left; margin-top: 5%; margin-left: 50%;">
+                                    <p class="lead"
+                                        style="margin-top: 5%; margin-left: 50%; color: whitesmoke; font-weight: 900; ">
                                         <%=caption%>
                                     </p>
-                                    <p class="lead" style="text-align: left; margin-left: 50%;">
+                                    <p class="lead"
+                                        style="margin-top: 5%; margin-left: 50%; color: whitesmoke; font-weight: 900; ">
                                         <%=caption2%>
                                     </p>
-                                    <!-- <a href="http://demoall.dedecms58.com/42935/#" class="btn">查看详情</a> -->
                                 </div>
                             </div>
                         </div>
@@ -55,13 +57,16 @@
     <% let {id, image, content, content1, content2 }=about; %>
         <div class="container">
             <div class="flex" data-aos="fade-up">
-                <div class="title" style="margin-bottom: 2rem;">
+                <div class="title">
                     <h3>企业简介</h3>
                     <h3 style="color: darkgray;">ABOUT US</h3>
                     <img class="mod-image" src="<%=$root%>img/biaoti.png" />
                 </div>
                 <div class="col-sm-8">
                     <div class="paragraph">
+                        <div class="title">
+                            始于创新， 精于匠心
+                        </div>
                         <p>
                             <%=content%>
                         </p>
@@ -109,14 +114,12 @@
             <div>细木工</div>
         </div>
         <div class="content" style="text-align: center;">
-            <% for (let i=0; i< product.length; i++) {
-                let {name, image } = product[i]; 
-                if( i>7) break;
-            %>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/<%=image%>">
-            </div>
-            <% } %>
+            <% for (let i=0; i< product.length; i++) { let {name, image }=product[i]; if( i>7) break;
+                %>
+                <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                    <img src="<%=$root%>img/<%=image%>">
+                </div>
+                <% } %>
         </div>
     </div>
     <div class="product-wrap" data-aos="fade-up" style="background-color: #f4f4f4; text-align: center;">
@@ -124,26 +127,25 @@
         <h3>INNOVATION &amp; ENVIRONMENTAL PROTECTON
         </h3>
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
-                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx4.jpg"></img>
-                <div style="font-size: 1.2rem;">实力雄厚</div>
+            <div class="item col-xs-6 col-sm-6 col-md-3">
+                <img src="<%=$root%>img/jxx4.jpg"></img>
+                <div>实力雄厚</div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
-                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx1.jpg"></img>
-                <div style="font-size: 1.2rem;">先进设备</div>
+            <div class="item col-xs-6 col-sm-6 col-md-3">
+                <img src="<%=$root%>img/jxx1.jpg"></img>
+                <div>先进设备</div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
-                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx2.jpg"></img>
-                <div style="font-size: 1.2rem;">选材优良</div>
+            <div class="item col-xs-6 col-sm-6 col-md-3">
+                <img src="<%=$root%>img/jxx2.jpg"></img>
+                <div>选材优良</div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
-                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx3.jpg"></img>
-                <div style="font-size: 1.2rem;">保障质量</div>
+            <div class="item col-xs-6 col-sm-6 col-md-3">
+                <img src="<%=$root%>img/jxx3.jpg"></img>
+                <div>保障质量</div>
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- engineetring -->
 <div class="engineetring">
@@ -154,21 +156,19 @@
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
 
-        <div class="content" style="text-align: center;">
+        <div class="content" style="width: 100%; text-align: center;">
 
-            <% let { image:image2  }=engineetring[0]; %>
-            <div class="maximage" data-aos="flip-left">
-                <img src="<%=$root%>img/<%=image2%>">
-            </div>
+            <% let { image:image2 }=engineetring[0]; %>
+                <div class="maximage" data-aos="flip-left">
+                    <img src="<%=$root%>img/<%=image2%>">
+                </div>
 
-            <% for (let i=1; i< engineetring.length; i++) {
-                let {name, image } = engineetring[i]; 
-                if( i>4) break;
-            %>
-            <div class="minimage" data-aos="fade-up">
-                <img src="<%=$root%>img/<%=image%>">
-            </div>
-            <% } %>
+                <% for (let i=1; i< engineetring.length; i++) { let {name, image }=engineetring[i]; if( i>4) break;
+                    %>
+                    <div class="minimage" data-aos="fade-up">
+                        <img src="<%=$root%>img/<%=image%>">
+                    </div>
+                    <% } %>
         </div>
     </div>
 </div>

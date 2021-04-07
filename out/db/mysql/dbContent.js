@@ -26,7 +26,7 @@ class DbContent extends db_1.Db {
     }
     queryImage(type, pageStart, pageSize) {
         return __awaiter(this, void 0, void 0, function* () {
-            var querySql = `SELECT * FROM ${this.db}.image where type=? ORDER BY id desc LIMIT ?,?;  `;
+            var querySql = `SELECT * FROM ${this.db}.image where type=? ORDER BY sort LIMIT ?,?;  `;
             const ret = yield this.tableFromSql(querySql, [type, pageStart, pageSize]);
             return ret;
         });

@@ -17,7 +17,7 @@ a:focus {
 }
 
 /* 模块样式 */
-.section {
+/* .section {
     padding         : 50px 0;
     background-color: white;
 }
@@ -35,7 +35,7 @@ a:focus {
 h3 {
     font-size: 30px;
     margin   : 0 0 20px;
-}
+} */
 
 /* 段落样式 */
 .paragraph p {
@@ -188,9 +188,9 @@ h3 {
 
 @media (max-width: 767px) {
 
-    .section {
+    /* .section {
         padding: 70px 0;
-    }
+    } */
 
     h3 {
         font-size: 20px;
@@ -205,13 +205,13 @@ h3 {
 
     }
 
-    .section-news .section-title h3 {
+    /* .section-news .section-title h3 {
         font-size: 26px;
     }
 
     .section-news .section-title small {
         font-size: 12px;
-    }
+    } */
 
     /* 手机下的段落样式 */
     .paragraph p:first-letter {

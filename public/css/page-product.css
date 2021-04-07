@@ -93,19 +93,18 @@
     text-align: center;
 }
 
-.product-wrap ul li {
-    float: left;
-    width: 25%;
-    text-align: center;
+.product-wrap .item {
+    margin: 2rem 0;
+}
+ 
+.product-wrap .item img{
+    width: 8%; height: 8%;
 }
 
-.product-wrap ul li img {
-    /* width : 100%; */
-    /* height: 100%; */
-    width: 25px;
-    margin: 0 auto;
+.product-wrap .item div {
+    font-size: 1.2rem;
 }
-
+ 
 
 /* 图片展示 结束 */
 
@@ -113,5 +112,9 @@
     .product .tab{
       width: 100%;  margin-right: auto; margin-left: auto; font-size: 15px; margin-top: 1.5rem;
    }
+
+   .product-wrap .item img{
+    width: 16%; height: 16%;
+}
    
 }

@@ -22,7 +22,7 @@ function home(req, res) {
             let swiper = yield db_1.Dbs.content.querySwiper();
             //车间
             let workshop = yield db_1.Dbs.content.queryImage("workshop", 0, 10);
-            //车间
+            //合作案例
             let engineetring = yield db_1.Dbs.content.queryImage("engineetring", 0, 10);
             let abouts = yield db_1.Dbs.content.queryAbout();
             let about = abouts.length > 0 ? abouts[0] : null;
