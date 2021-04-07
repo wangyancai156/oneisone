@@ -1,5 +1,3 @@
-
-
 @import './awesome/css/font-awesome.min.css';
 @import 'swiper.min.css';
 @import 'bootstrap.css';
@@ -9,4 +7,7 @@
 @import 'owl-banner-styel.css';
 @import 'footer-style.css';
 @import 'aos.css';
-@import 'materialize.css';
+@import 'animate.min.css';
+@import 'page-about.css';
+@import 'page-product.css';
+@import 'page-engineetring.css';

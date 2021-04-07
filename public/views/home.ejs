@@ -51,16 +51,16 @@
 </div>
 
 <!-- about -->
-<div class="section" >
+<div class="about">
     <% let {id, image, content, content1, content2 }=about; %>
-        <div class="container" >
-            <div class="row" data-aos="fade-up">
-                <div class="section-title" style="margin-bottom: 2rem;" >
+        <div class="container">
+            <div class="flex" data-aos="fade-up">
+                <div class="title" style="margin-bottom: 2rem;">
                     <h3>企业简介</h3>
-                    <h3 style="color: darkgray;">About us</h3>
+                    <h3 style="color: darkgray;">ABOUT US</h3>
                     <img class="mod-image" src="<%=$root%>img/biaoti.png" />
                 </div>
-                <div class="col-sm-8" data-aos="fade-up">
+                <div class="col-sm-8">
                     <div class="paragraph">
                         <p>
                             <%=content%>
@@ -70,120 +70,121 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-4  mypicture" style="padding: 2px;" >
+                <div class="col-sm-4  mypicture">
                     <img src="<%=$root%>img/<%=image%>"></img>
                 </div>
             </div>
-            <div class="js uu" style="background-color: #f4f4f4; margin: 20rem 0;" data-aos="fade-up">
-                <ul>
-                    <li>
-                        <b>23</b>
-                        <dt>23年制板经验</dt>
-                    </li>
-                    <li>
-                        <b>30</b>
-                        <dt>30多道生产工序</dt>
-
-                    </li>
-                    <li>
-                        <b>150</b>
-                        <dt>年产量达150万张</dt>
-                    </li>
-                    <li>
-                        <b>24</b>
-                        <dt>24小时售后服务</dt>
-                    </li>
-                </ul>
-            </div>
-          
+        </div>
+        <div class="about-wrap flex" data-aos="fade-up">
+            <dl>
+                <dd><b class="numUp">23</b><span>年</span></dd>
+                <dt>23年制板经验</dt>
+            </dl>
+            <dl>
+                <dd><b class="numUp">30</b><span>道</span></dd>
+                <dt>30多道生产工序</dt>
+            </dl>
+            <dl>
+                <dd><b class="numUp">150</b><span>万</span></dd>
+                <dt>年产量达150万张</dt>
+            </dl>
+            <dl>
+                <dd><b class="numUp">24</b><span>小时</span></dd>
+                <dt>24小时售后服务</dt>
+            </dl>
         </div>
 </div>
-
-<!-- latest news -->
-
-
-
-
 
 <!-- product -->
-<div class="section" style="background-color:whitesmoke; background-image: url(<%=$root%>img/beijing2.jpg);">
+<div class="product">
     <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-            <h3 style="color: white;">产品展示</h3>
-            <h3 style="color: darkgray;">Product center</h3>
+        <div class="title" data-aos="fade-up">
+            <h3>产品展示</h3>
+            <h3 style="color: darkgray;">PRODUCT CENTER</h3>
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
-        <div class="lunbo  clearfix" id="box">
-
-            <% for(var i=0;i<product.length;i++){ let {id, image, title }=product[i]; %>
-                <div style="text-align: center;" data-aos="flip-left">
-                    <div class="mypicture" style="margin: 0 1rem 0 1rem ;">
-                        <img src="<%=$root%>img/<%=image%>" alt="<%=title%>">
-                    </div>
-                    <div style="background-color:azure; margin: 0 1rem;  padding: 1rem 0;">
-                        <span style="color:black;  font-size:1.2rem; ">
-                            <%=title%>
-                        </span>
-                    </div>
-                </div>
-                <%} %>
+        <div class="tab flex" data-aos="fade-up">
+            <div>阻燃板</div>
+            <div>生态板</div>
+            <div>细木工</div>
+        </div>
+        <div class="content" style="text-align: center;">
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli1.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli2.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli3.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli4.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli1.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli2.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli3.jpg">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
+                <img src="<%=$root%>img/anli4.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="product-wrap" data-aos="fade-up" style="background-color: #f4f4f4; text-align: center;">
+        <h3>技术创新·引领环保</h3>
+        <h3>INNOVATION &amp; ENVIRONMENTAL PROTECTON
+        </h3>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
+                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx4.jpg"></img>
+                <div style="font-size: 1.2rem;">实力雄厚</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
+                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx1.jpg"></img>
+                <div style="font-size: 1.2rem;">先进设备</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
+                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx2.jpg"></img>
+                <div style="font-size: 1.2rem;">选材优良</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="margin: 2rem 0;">
+                <img style="width: 8%; height: 8%;" src="<%=$root%>img/jxx3.jpg"></img>
+                <div style="font-size: 1.2rem;">保障质量</div>
+            </div>
         </div>
     </div>
 </div>
-<!-- latest news -->
-<div class="js" data-aos="fade-up" style="background-color: #f4f4f4;">
-    <h3>技术创新·引领环保</h3>
-    <h3>INNOVATION &amp; ENVIRONMENTAL
-        PROTECTON</h3>
-    <div>
-        <ul>
-            <li>
-                <img src="<%=$root%>img/jxx4.jpg"></img>
-                <div>实力雄厚</div>
-            </li>
-            <li>
-                <img src="<%=$root%>img/jxx1.jpg"></img>
-                <div>先进设备</div>
-            </li>
-            <li>
-                <img src="<%=$root%>img/jxx2.jpg"></img>
-                <div>选材优良</div>
-            </li>
-            <li>
-                <img src="<%=$root%>img/jxx3.jpg"></img>
-                <div>保障质量</div>
-            </li>
-
-        </ul>
-    </div>
-</div>
 
 
-
-<!-- hezuo -->
-<div class="section">
+<!-- engineetring -->
+<div class="engineetring">
     <div class="container">
-        <div class="section-title" data-aos="fade-up">
+        <div class="title" data-aos="fade-up">
             <h3>合作案例</h3>
             <h3 style="color: darkgray;">ENGINEERING CASE</h3>
             <img class="mod-image" src="<%=$root%>img/biaoti.png" />
         </div>
-        <div style="margin-top:20px;margin-bottom:13%;">
-            <div style="width:47%;float:left; margin: 0.2rem;" data-aos="flip-left">
-                <img style="width:100%;height:100%;" src="<%=$root%>img/anli1.jpg">
+
+        <div class="content" style="text-align: center;">
+            <div class="maximage" data-aos="flip-left">
+                <img src="<%=$root%>img/anli1.jpg">
             </div>
-            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-up">
-                <img style="width:100%;height:100%;" src="<%=$root%>img/anli2.jpg">
+            <div class="minimage" data-aos="fade-up">
+                <img src="<%=$root%>img/anli2.jpg">
             </div>
-            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-up">
-                <img style="width:100%;height:100%;" src="<%=$root%>img/anli3.jpg">
+            <div class="minimage" data-aos="fade-up">
+                <img src="<%=$root%>img/anli3.jpg">
             </div>
-            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-up">
-                <img style="width:100%;height:100%;" src="<%=$root%>img/anli4.jpg">
+            <div class="minimage" data-aos="fade-up">
+                <img src="<%=$root%>img/anli4.jpg">
             </div>
-            <div style="width:23%;float:left; margin: 0.2rem;" data-aos="fade-up">
-                <img style="width:100%;height:100%;" src="<%=$root%>img/anli5.jpg">
+            <div class="minimage" data-aos="flip-left">
+                <img src="<%=$root%>img/anli1.jpg">
             </div>
         </div>
     </div>

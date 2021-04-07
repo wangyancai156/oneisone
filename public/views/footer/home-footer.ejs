@@ -49,10 +49,10 @@
         </div>
     </div>
 </div>
-<div class="search-pop"> <a href="javascript:;" class="close fa fa-times-circle"></a>
+<div class="search-pop">
+    <a href="javascript:;" class="close fa fa-times-circle"></a>
     <div class="content" style="height: 100%;">
-        <form action="http://demoall.dedecms58.com/42935/%3Cyhcms:searchurl%20/%3E/" method="post"
-            style="display: table;height: 100%;width: 100%;">
+        <form action="http://demoall.dedecms58.com/42935/%3Cyhcms:searchurl%20/%3E/" method="post" style="display: table;height: 100%;width: 100%;">
             <div style="display: table-cell;vertical-align: middle;">
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
                     <div class="ipt"> <i class="fa fa-search search-button" type="submit"></i>
@@ -92,11 +92,15 @@
             </div>
         </div>
     </div>
-    <div class="cndns-right-meau meau-top" id="top-back" style="display: none;"> <a href="javascript:"
-            class="cndns-right-btn"> <span class="fa fa-angle-double-up"></span> <i>返回顶部</i> </a> </div>
+    <div class="cndns-right-meau meau-top" id="top-back" style="display: none;">
+        <a href="javascript:" class="cndns-right-btn"> <span class="fa fa-angle-double-up"></span> <i>返回顶部</i> </a>
+    </div>
 </div>
 
 <script>
+    $(function() {
+        $('.numUp').countUp()
+    })
 
     //用于轮播
     $(".owl-banner").owlCarousel({
@@ -130,10 +134,9 @@
     // });
 
     AOS.init({
-        duration:1000
-        // ,once:true //是否仅触发一次
+        duration: 1000
+            // ,once:true //是否仅触发一次
     });
-
 </script>
 </body>
 
