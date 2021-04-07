@@ -109,30 +109,14 @@
             <div>细木工</div>
         </div>
         <div class="content" style="text-align: center;">
+            <% for (let i=0; i< product.length; i++) {
+                let {name, image } = product[i]; 
+                if( i>7) break;
+            %>
             <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli1.jpg">
+                <img src="<%=$root%>img/<%=image%>">
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli2.jpg">
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli3.jpg">
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli4.jpg">
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli1.jpg">
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli2.jpg">
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli3.jpg">
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3" data-aos="zoom-in">
-                <img src="<%=$root%>img/anli4.jpg">
-            </div>
+            <% } %>
         </div>
     </div>
     <div class="product-wrap" data-aos="fade-up" style="background-color: #f4f4f4; text-align: center;">
@@ -171,21 +155,20 @@
         </div>
 
         <div class="content" style="text-align: center;">
+
+            <% let { image:image2  }=engineetring[0]; %>
             <div class="maximage" data-aos="flip-left">
-                <img src="<%=$root%>img/anli1.jpg">
+                <img src="<%=$root%>img/<%=image2%>">
             </div>
+
+            <% for (let i=1; i< engineetring.length; i++) {
+                let {name, image } = engineetring[i]; 
+                if( i>4) break;
+            %>
             <div class="minimage" data-aos="fade-up">
-                <img src="<%=$root%>img/anli2.jpg">
+                <img src="<%=$root%>img/<%=image%>">
             </div>
-            <div class="minimage" data-aos="fade-up">
-                <img src="<%=$root%>img/anli3.jpg">
-            </div>
-            <div class="minimage" data-aos="fade-up">
-                <img src="<%=$root%>img/anli4.jpg">
-            </div>
-            <div class="minimage" data-aos="flip-left">
-                <img src="<%=$root%>img/anli1.jpg">
-            </div>
+            <% } %>
         </div>
     </div>
 </div>
@@ -198,17 +181,15 @@
                 <ul>
                     <li> <a href="http://www.baidu.com/" target="_blank">百度一下</a> </li>
 
-                    <li> <a href="http://www.ejucms.com/" target="_blank">易居CMS</a> </li>
-
-                    <li> <a href="http://www.ebuycms.com/" target="_blank">易购CMS</a> </li>
-
-                    <li> <a href="http://www.eyoucms.com/" target="_blank">易优CMS</a> </li>
+                    <li> <a href="http://www.umutou.com/" target="_blank">优木拓</a> </li>
 
                     <li> <a href="http://www.yiyongtong.com/" target="_blank">小程序</a> </li>
 
                     <li> <a href="http://www.sucai58.com/" target="_blank">素材58</a> </li>
 
                     <li> <a href="http://www.dede58.com/" target="_blank">织梦模板</a> </li>
+
+                    <li> <a href="http://www.umutou.com/" target="_blank">优木头</a> </li>
 
                     <li> <a href="http://www.taobao.com/" target="_blank">淘宝</a> </li>
                 </ul>

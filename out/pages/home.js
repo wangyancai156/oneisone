@@ -17,11 +17,13 @@ function home(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             //获取产品
-            let product = yield db_1.Dbs.content.queryImage("product", 1, 10);
+            let product = yield db_1.Dbs.content.queryImage("product", 0, 10);
             //获取轮播图
             let swiper = yield db_1.Dbs.content.querySwiper();
             //车间
-            let workshop = yield db_1.Dbs.content.queryImage("workshop", 1, 10);
+            let workshop = yield db_1.Dbs.content.queryImage("workshop", 0, 10);
+            //车间
+            let engineetring = yield db_1.Dbs.content.queryImage("engineetring", 0, 10);
             let abouts = yield db_1.Dbs.content.queryAbout();
             let about = abouts.length > 0 ? abouts[0] : null;
             let header = ejs.fileLoader(tools_1.viewPath + 'header/home-header' + tools_1.ejsSuffix).toString();
@@ -34,6 +36,7 @@ function home(req, res) {
                 swiper: swiper,
                 about: about,
                 product: product,
+                engineetring: engineetring,
                 workshop: workshop
             });
             console.log(about);

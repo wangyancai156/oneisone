@@ -21,7 +21,7 @@ export class DbContent extends Db {
 
     async queryImage(type: any, pageStart: number, pageSize: number): Promise<any> {
 
-        var querySql: string = `SELECT * FROM ${this.db}.image where type=? ORDER BY id desc LIMIT ?,?;  `;
+        var querySql: string = `SELECT * FROM ${this.db}.image where type=? ORDER BY sort LIMIT ?,?;  `;
 
         const ret = await this.tableFromSql(querySql, [type, pageStart, pageSize]);
         return ret;

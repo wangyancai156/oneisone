@@ -7,11 +7,13 @@ export async function home(req: Request, res: Response) {
     try {
 
         //获取产品
-        let product = await Dbs.content.queryImage("product", 1, 10);
+        let product = await Dbs.content.queryImage("product", 0,  10);
         //获取轮播图
         let swiper = await Dbs.content.querySwiper();
         //车间
-        let workshop = await Dbs.content.queryImage("workshop", 1, 10);
+        let workshop = await Dbs.content.queryImage("workshop", 0, 10);
+        //合作案例
+        let engineetring = await Dbs.content.queryImage("engineetring", 0, 10);
 
         let abouts = await Dbs.content.queryAbout();
         let about = abouts.length > 0 ? abouts[0] : null
@@ -27,6 +29,7 @@ export async function home(req: Request, res: Response) {
             swiper: swiper,
             about: about,
             product: product,
+            engineetring:engineetring,
             workshop: workshop
         });
 
