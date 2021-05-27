@@ -45,11 +45,18 @@
 }
 
 .product .title h3 {
-    font-size: 2rem;
+    font-size: 4rem;
     width: 100%;
     margin: 0;
     padding: 0 0 10px 0;
     text-align: center;
+    color: #8a8a8a;
+}
+
+@media (max-width: 767px) {
+    .product .title h3 {
+        font-size: 2rem;
+    }
 }
 
 .product .tab{
