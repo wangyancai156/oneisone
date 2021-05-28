@@ -3,11 +3,11 @@
 
 /* 此样式在 bootstrap.css 设置*/
 
-.engineetring {
+.index .engineetring {
     margin: 0 0 2rem 0;
 }
 
-.engineetring .container {
+.index .engineetring .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -15,19 +15,19 @@
 }
 
 @media (min-width: 768px) {
-    .engineetring .container {
+    .index .engineetring .container {
         width: 750px;
     }
 }
 
 @media (min-width: 992px) {
-    .engineetring .container {
+    .index .engineetring .container {
         width: 970px;
     }
 }
 
 @media (min-width: 1200px) {
-    .engineetring .container {
+    .index .engineetring .container {
         width: 95%;
     }
 }
@@ -38,13 +38,13 @@
 
 /* 内容标题  开始 */
 
-.engineetring .title {
+.index .engineetring .title {
     width: 100%;
     margin-top: 2rem;
     text-align: center;
 }
 
-.engineetring .title h3 {
+.index .engineetring .title h3 {
     font-size: 4rem;
     width: 100%;
     margin: 0;
@@ -54,7 +54,7 @@
 }
 
 @media (max-width: 767px) {
-    .engineetring .title h3 {
+    .index .engineetring .title h3 {
         font-size: 2rem;
     }
 }
@@ -65,24 +65,24 @@
 
 /* 图片展示 开始 */
 
-.engineetring .content {
+.index .engineetring .content {
     margin-top: 20px;
     margin-bottom: 13%;
 }
 
-.engineetring .content .maximage {
+.index .engineetring .content .maximage {
     width: 47%;
     float: left;
     margin: 0.2rem;
 }
 
-.engineetring .content .minimage {
+.index .engineetring .content .minimage {
     width: 23%;
     float: left;
     margin: 0.27rem;
 }
 
-.engineetring .content img {
+.index .engineetring .content img {
     width: 100%;
     height: 100%;
 }
@@ -90,12 +90,12 @@
 
 /*product-wrap*/
 
-.engineetring-wrap {
+.index .engineetring-wrap {
     /* font-size:0.8rem; */
     padding: 3rem 5rem 5rem 5rem;
 }
 
-.engineetring-wrap h3 {
+.index .engineetring-wrap h3 {
     font-size: 1.2rem;
     width: 100%;
     margin: 0;
@@ -103,13 +103,13 @@
     text-align: center;
 }
 
-.engineetring-wrap ul li {
+.index .engineetring-wrap ul li {
     float: left;
     width: 25%;
     text-align: center;
 }
 
-.engineetring-wrap ul li img {
+.index .engineetring-wrap ul li img {
     /* width : 100%; */
     /* height: 100%; */
     width: 23px;
@@ -120,12 +120,12 @@
 /* 图片展示 结束 */
 
 @media (max-width: 767px) {
-    .engineetring .content .maximage {
+    .index .engineetring .content .maximage {
         width: 99%;
         float: left;
         margin: 0.2rem;
     }
-    .engineetring .content .minimage {
+    .index .engineetring .content .minimage {
         width: 48.6%;
         float: left;
         margin: 0.2rem;

@@ -3,7 +3,7 @@
 
 /* 此样式在 bootstrap.css 设置*/
 
-.about .container {
+.index .about .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -11,19 +11,19 @@
 }
 
 @media (min-width: 767px) {
-    .about .container {
+    .index .about .container {
         width: 750px;
     }
 }
 
 @media (min-width: 992px) {
-    .about .container {
+    .index .about .container {
         width: 970px;
     }
 }
 
 @media (min-width: 1200px) {
-    .about .container {
+    .index .about .container {
         width: 95%;
     }
 }
@@ -34,13 +34,13 @@
 
 /* 内容标题  开始 */
 
-.about .title {
+.index .about .title {
     width: 100%;
     margin-top: 2rem;
     text-align: center;
 }
 
-.about .title h3 {
+.index .about .title h3 {
     font-size: 4rem;
     width: 100%;
     margin: 0;
@@ -50,7 +50,7 @@
 }
 
 @media (max-width: 767px) {
-    .about .title h3 {
+    .index .about .title h3 {
         font-size: 2rem;
     }
 }
@@ -59,11 +59,11 @@
 
 /* 段落样式 开始 */
 
-.about .paragraph {
+.index .about .paragraph {
     width: 90%;
 }
 
-.about .paragraph p {
+.index .about .paragraph p {
     /* font       : 100%/1.6 Verdana, Geneva, Arial, Helvetica, sans-serif; */
     font-family: 微软雅黑, 'Microsoft YaHei';
     color: #8a8a8a;
@@ -73,13 +73,13 @@
     text-indent: 2em;
 }
 
-.about .paragraph .title {
+.index .about .paragraph .title {
     text-align: center; width: 100%; padding: 4rem;font-weight: 600; color: #8a8a8a; font-size: 4rem;
 }
 
 
 @media (max-width: 767px) {
-    .about .paragraph .title {
+    .index .about .paragraph .title {
         padding: 1rem; font-size: 2rem;
     }
 }
@@ -89,19 +89,19 @@
 /* 段落样式 结束 */
 
 @media (max-width: 767px) {
-    .about .lead {
+    .index .about .lead {
         font-size: 14px;
     }
-    .about .title {
+    .index .about .title {
         margin-bottom: 20px;
     }
-    .about .news .title h3 {
+    .index .about .news .title h3 {
         font-size: 26px;
     }
-    .about .news .title small {
+    .index .about .news .title small {
         font-size: 12px;
     }
-    .about .paragraph {
+    .index .about .paragraph {
         width: 100%;
     }
 }
@@ -109,11 +109,11 @@
 
 /* 内容标题  结束 */
 
-.about-wrap {
+.index .about-wrap {
     background: #f5f5f5;
 }
 
-.about-wrap dl {
+.index .about-wrap dl {
     display: table-cell;
     width: 25%;
     padding: 60px 0 51px;
@@ -121,7 +121,7 @@
     box-sizing: border-box;
 }
 
-.about-wrap dl:before {
+.index .about-wrap dl:before {
     content: '';
     position: absolute;
     height: 140px;
@@ -130,15 +130,15 @@
     background: #dbdada;
 }
 
-.about-wrap dd {
+.index .about-wrap dd {
     text-align: center;
 }
 
-.about-wrap dl:last-child:before {
+.index .about-wrap dl:last-child:before {
     width: 0
 }
 
-.about-wrap dd b {
+.index .about-wrap dd b {
     color: #2c276e;
     font-size: 80px;
     font-weight: bold;
@@ -146,7 +146,7 @@
     position: relative;
 }
 
-.about-wrap dd b:before {
+.index .about-wrap dd b:before {
     content: '+';
     position: absolute;
     right: -36px;
@@ -155,31 +155,31 @@
     font-weight: bold;
 }
 
-.about-wrap dd span {
+.index .about-wrap dd span {
     color: #615f5c;
     font-size: 18px;
     margin-left: 12px;
 }
 
-.about-wrap dt {
+.index .about-wrap dt {
     text-align: center;
     font-size: 14px;
     color: #615f5c;
 }
 
 @media screen and (max-width: 1000px) {
-    .about-wrap dl:last-child:before,
-    .about-wrap dl:nth-child(2):before {
+    .index .about-wrap dl:last-child:before,
+    .index .about-wrap dl:nth-child(2):before {
         width: 0
     }
-    .about-wrap dd b {
+    .index .about-wrap dd b {
         color: #2c276e;
         font-size: 40px;
         font-weight: 500;
         font-family: fantasy;
         position: relative;
     }
-    .about-wrap dd span {
+    .index .about-wrap dd span {
         color: #615f5c;
         font-size: 10px;
         margin-left: 12px;
@@ -190,13 +190,13 @@
     .container {
         width: 96%;
     }
-    .about-wrap dl {
+    .index .about-wrap dl {
         width: 50%;
         padding: 1rem 0;
         position: relative;
         box-sizing: border-box;
     }
-    .about-wrap dl:before {
+    .index .about-wrap dl:before {
         content: '';
         position: absolute;
         height: 5.4rem;
@@ -204,21 +204,21 @@
         width: 1px;
         background: #dbdada;
     }
-    .about-wrap dd {
+    .index .about-wrap dd {
         text-align: center;
     }
-    .about-wrap dl:last-child:before,
-    .about-wrap dl:nth-child(2):before {
+    .index .about-wrap dl:last-child:before,
+    .index .about-wrap dl:nth-child(2):before {
         width: 0
     }
-    .about-wrap dd b {
+    .index .about-wrap dd b {
         color: #2c276e;
         font-size: 32px;
         font-weight: 100;
         font-family: fantasy;
         position: relative;
     }
-    .about-wrap dd b:before {
+    .index .about-wrap dd b:before {
         content: '+';
         position: absolute;
         right: -20px;
@@ -226,7 +226,7 @@
         font-size: 29px;
         font-weight: bold;
     }
-    .about-wrap dd span {
+    .index .about-wrap dd span {
         color: #615f5c;
         font-size: 12px;
         margin-left: 12px;
