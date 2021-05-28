@@ -71,15 +71,15 @@
 }
 
 .index .engineetring .content .maximage {
-    width: 47%;
+    width: 50%;
     float: left;
-    margin: 0.2rem;
+    padding: 2px;
 }
 
 .index .engineetring .content .minimage {
-    width: 23%;
+    width: 25%;
     float: left;
-    margin: 0.27rem;
+    padding: 2px;
 }
 
 .index .engineetring .content img {

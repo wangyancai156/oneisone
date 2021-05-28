@@ -1,20 +1,26 @@
-<div class="banner text-center " style="background-image: url(<%=$root%>img/webcase.jpg)">
-</div>
+<div class="about">
+    <div class="banner text-center " style="background-image: url(<%=$root%>img/webcase.jpg)">
+    </div>
 
-<div style="padding: 2rem;">
-    您的位置：首页 > 关于我们
-</div>
+    <div style="padding: 2rem;">
+        您的位置：首页 > 关于我们
+    </div>
 
-<!-- about -->
-<div >
-    <% let {id, image, content, content1, content2 }=about; %>
+    <!-- about -->
+    <div class="about">
+        <% let {id, image, content, content1, content2 }=about; %>
         <div class="container">
-            <div class="row">
-                <div style="margin-bottom: 2rem;" data-aos=" fade-up">
-                    <h3 style="color: darkgray; margin-left: 1.5rem;">企业简介</h3>
+            <div class="flex" data-aos="fade-up">
+                <div class="title">
+                    <h3>企业简介</h3>
+                    <h3 style="color: darkgray;">ABOUT US</h3>
+                    <img class="mod-image" src="<%=$root%>img/biaoti.png" />
                 </div>
-                <div class="col-sm-8" data-aos="fade-up">
+                <div class="col-sm-8">
                     <div class="paragraph">
+                        <div class="title">
+                            始于创新， 精于匠心
+                        </div>
                         <p>
                             <%=content%>
                         </p>
@@ -23,39 +29,37 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-4  mypicture" style="padding: 2px;" data-aos="fade-down">
+                <div class="col-sm-4  mypicture">
                     <img src="<%=$root%>img/<%=image%>"></img>
                 </div>
             </div>
         </div>
-</div>
-
-
-<!-- about -->
-<div class="section">
-
-    <div class="container">
-        <div class="row">
-            <div style="margin-bottom: 2rem; text-align: center;" data-aos=" fade-up">
-                <h3>生产实力</h3>
+    </div>
+ 
+    <!-- strength -->
+    <div class="about" style="margin-top: 4rem;">
+        <div class="flex" data-aos="fade-up">
+            <div class="title">
+                <h3>生产车间</h3>
+                <h3 style="color: darkgray;">WORKSHOP</h3>
                 <img class="mod-image" src="<%=$root%>img/biaoti.png" />
             </div>
-            <div class="col-sm-8" data-aos="fade-up">
-                <p>企业荣誉</p>
-                <p>公司作为中国林产品工业协会的副理事长单位，通过IS09001 质量管理体系认证ISO14001环境体系认证，产品获得绿色环境标志产品认证，被中国室内装饰协会推荐为“3.15"
-                    重点推荐绿色环保产品，被中国建筑业协会推荐为工程建筑新产品新技术品牌。同时获得中国木地板十大品牌、中国市场畅销满意品牌、中国著名品牌、消费者最信赖的中国质量500强、消费者最信赖的中国地板行业十大质量品牌等。
-                </p>
-                <p> 产品优势</p>
-                　　 <p>
-                    康家系列产品功能齐全、品种多，不仅生产传统的各种规格的水晶面、浮雕面、仿古纹、-次直压成型仿实木地板等....而且还生产各种多层实木复合地板与实木地板等。优质的产品，完善的管理体系只是成功的一半，顾客的需求与满意才是企业长久发展的动力，本公司将以“顾客100%满意度”为新的追求目标。进-
-                    -步完善售前、售中、售后服务，以“优质的服务、-流的品质”来树立良好的品牌形象。</p>
-                <p> 发展目标</p>
-                　　<p>
-                    消费者的信任与同行的认可更增加了森源木业人的责任感。为了不断提升产品品质，江西森源木业有限公司从德国引进最先进的生产设备，并采用优质环保的原料投入生产，对生产中的每一个细节都严格把关，确保生产出的每一块地板具有环保、耐磨、防火、防蛀、抗菌等多重效果。实现了从人工速成林高密板、地板生产、销售、服务-条龙，使康家地板产品质量在各个环节.上都能控制在自己的手中，康家地板的开发前景更为广阔。
-                </p>
-            </div>
-            <div class="col-sm-4  mypicture" style="padding: 2px;" data-aos="fade-down">
-                <img src="<%=$root%>img/<%=image%>"></img>
+            <!-- <div class="paragraph" style="width: 90%; margin-left: auto; margin-right: auto; margin-top: 4rem;">
+                <p>山东一是一木业有限公司是山东曹县重要的木材加工企业。公路、铁路纵横交错，四通八达，交通十分便利。公司组建于1998年，经过多年的磨练，克服了种种困难，打造出先进的管理流程、造就了一批精干的管理队伍、培养了一批技能精湛员工，引进先进的生产设备，建有细木工板车间、生态板车间。产品选用优良桐木为原料，经过锯切、旋切、压刨、烘干，热压胶和，砂光等多种先进的工艺流程，年生产量达150万张。</p>
+            </div> -->
+            <div data-aos="fade-up">
+                <div class="minimage">
+                    <img src="<%=$root%>img/strength/strength1.jpg"></img>
+                </div>
+                <div class="minimage">
+                    <img src="<%=$root%>img/strength/strength2.jpg"></img>
+                </div>
+                <div class="minimage">
+                    <img src="<%=$root%>img/strength/strength3.jpg"></img>
+                </div>
+                <div class="minimage">
+                    <img src="<%=$root%>img/strength/strength4.jpg"></img>
+                </div>
             </div>
         </div>
     </div>
