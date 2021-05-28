@@ -9,8 +9,6 @@
 @import 'footer-style.css';
 @import 'animate.min.css';
 
-@import 'page-banner.css';
-@import 'page-about.css';
-@import 'page-product.css';
-@import 'page-engineetring.css';
+@import './index/index.css';
+
  
