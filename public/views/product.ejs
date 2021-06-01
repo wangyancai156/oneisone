@@ -1,45 +1,37 @@
-<div class="about">
+<div class="product">
     <div class="banner text-center " style="background-image: url(<%=$root%>img/webcase.jpg)">
     </div>
 
     <div style="padding: 2rem;">
         您的位置：首页 > 产品中心
     </div>
-
-    <div class="section">
-        <div class="container">
-            <div class="row clearfix" id="box">
-                <div class="col col-md-3 col-sm-6 col-sm-12">
-                    <div class="mypicture" style="padding: 1rem;">
-                        <img src="<%=$root%>img/ry1.jpg" style="height: 38rem;" alt="案例">
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-sm-12">
-                    <div class="mypicture" style="padding: 1rem;">
-                        <img src="<%=$root%>img/ry2.jpg" style="height: 38rem;" alt="案例">
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-sm-12">
-                    <div class="mypicture" style="padding: 1rem;">
-                        <img src="<%=$root%>img/ry3.jpg" style="height: 18rem;" alt="案例">
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-sm-12">
-                    <div class="mypicture" style="padding: 1rem;">
-                        <img src="<%=$root%>img/ry4.jpg" style="height: 18rem;" alt="案例">
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-sm-12">
-                    <div class="mypicture" style="padding: 1rem;">
-                        <img src="<%=$root%>img/ry5.jpg" style="height: 18rem;" alt="案例">
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-sm-12">
-                    <div class="mypicture" style="padding: 1rem;">
-                        <img src="<%=$root%>img/ry6.jpg" style="height: 18rem;" alt="案例">
-                    </div>
-                </div>
+        <div class="tab">
+            <div class="category" >
+                <ul>
+                    <li class="active">阻燃板</li>
+                    <li>细木工</li>
+                    <li>细木工</li>
+                </ul>
             </div>
+            <div class="cont active">
+                11111111111111
+            </div>
+            <div class="cont">
+                77777777777777
+            </div>	
+            <div class="cont">
+                66666666666666
+           </div>
         </div>
-    </div>
 </div>
+
+<script type="text/javascript">
+	$(function(){
+		//选项卡切换
+		$('.tab ul li').click(function(){
+			indexC = $(this).index();
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.cont').eq(indexC).addClass('active').siblings().removeClass('active');
+		})
+	})
+</script>
